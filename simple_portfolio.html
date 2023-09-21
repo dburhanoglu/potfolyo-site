@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="simple_portfolio.css" />
+    <title>Portfolyom</title>
+  </head>
+
+  <body>
+    <table
+      id="header"
+      class="header-table"
+      cellpadding="15"
+      cellspacing="0"
+      width="100%"
+    >
+      <tr>
+        <td width="5%"></td>
+
+        <td width="20%">
+          <b><span id="name-surname" class="name-in-header"></span></b>
+        </td>
+
+        <td>
+          <ul class="navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <table
+      id="home"
+      class="home-table centered-table"
+      cellpadding="20"
+      cellspacing="0"
+      width="100%"
+    >
+      <tr>
+        <td>
+          <div valign="middle">
+            <span id="work-type" class="work-type"> </span>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <table
+      id="about"
+      class="about-table"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+    >
+      <tr>
+        <td>
+          <table
+            class="centered-table"
+            cellpadding="15"
+            cellspacing="0"
+            width="80%"
+          >
+            <tr>
+              <td height="180" colspan="2">
+                <div class="yellow-table-topic">About Me</div>
+                <hr color="#383b4d" width="90" />
+              </td>
+            </tr>
+
+            <tr>
+              <td width="40%">
+                <img src="me.jpg" class="img-center" />
+              </td>
+
+              <td width="60%">
+                <span
+                  id="about-me-inside-text"
+                  class="yellow-inside-text"
+                ></span>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table
+      id="projects"
+      class="projects-table"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+    >
+      <tr>
+        <td>
+          <table
+            class="centered-table"
+            cellpadding="15"
+            cellspacing="0"
+            width="80%"
+          >
+            <tr>
+              <td height="180" valign="middle" colspan="2">
+                <div class="black-table-topic">Projects</div>
+                <hr color="#383b4d" width="90" />
+              </td>
+            </tr>
+
+            <tr>
+              <td height="10">
+                <ul>
+                  <li>
+                    No eval calculator Typescript
+                    <a href="#" style="text-decoration: none"> ➲ </a>
+                  </li>
+                  <br />
+                  <li>
+                    SNR Collector - Signal Noise - Server side Android App
+                    <a href="#" style="text-decoration: none" color="#c2c0c3">
+                      ➲
+                    </a>
+                  </li>
+                  <br />
+                  <li>
+                    BMI Calculator
+                    <a href="#" style="text-decoration: none"> ➲ </a>
+                  </li>
+                  <br />
+                  <li>
+                    Event Based Social Media
+                    <a href="#" style="text-decoration: none"> ➲ </a>
+                  </li>
+                  <br />
+                  <li>
+                    Climate Control
+                    <a href="#" style="text-decoration: none"> ➲ </a>
+                  </li>
+                </ul>
+              </td>
+
+              <td width="45%">
+                <img src="me.jpg" alt="Project" class="img-center" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table
+      id="achievements"
+      class="achievements-table"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+    >
+      <tr>
+        <td>
+          <table
+            class="centered-table"
+            cellpadding="15"
+            cellspacing="0"
+            width="80%"
+          >
+            <tr>
+              <td height="180" class="center" valign="middle">
+                <div class="yellow-table-topic">Achievements</div>
+                <hr color="#faec4e" width="90" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <ul id="achievement-list" class="yellow-inside-text"></ul>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table
+      id="contact"
+      class="contact-table"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+    >
+      <tr>
+        <td>
+          <table
+            class="centered-table"
+            cellpadding="15"
+            cellspacing="0"
+            width="80%"
+          >
+            <tr>
+              <td height="180" class="center" valign="middle" colspan="2">
+                <div class="black-table-topic">Contact</div>
+                <hr color="#383b4d" width="90" />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="center" valign="top">
+                <table
+                  style="background-color: #507294"
+                  class="centered-table rounded-corners"
+                  width="50%"
+                  cellpadding="15"
+                  cellspacing="0"
+                >
+                  <tr>
+                    <td width="30%">
+                      <div class="contact-submission-table-text">Name</div>
+                    </td>
+                    <td>
+                      <div class="contact-submission-table-text">
+                        <input type="text" size="40" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="contact-submission-table-text">Email</div>
+                    </td>
+                    <td>
+                      <div class="contact-submission-table-text">
+                        <input type="email" size="40" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="contact-submission-table-text">Number</div>
+                    </td>
+                    <td>
+                      <div class="contact-submission-table-text">
+                        <input type="number" size="12" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="contact-submission-table-text">Message</div>
+                    </td>
+                    <td>
+                      <div class="contact-submission-table-text">
+                        <textarea rows="5" cols="37"> </textarea>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <button
+                        id="submit-button"
+                        type="Submit"
+                        onclick="getUserName()"
+                      >
+                        <div class="contact-submission-table-submit-button">
+                          <b>Submit</b>
+                        </div>
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table id="footer1" class="footer1-table">
+      <tr>
+        <td>
+          <a
+            class="link-color"
+            href="https://www.linkedin.com/in/sanalcem/"
+            style="text-decoration: none"
+          >
+            <b>LinkedIn</b>➲
+          </a>
+          <div class="icdeki-cubuk">|</div>
+        </td>
+
+        <td>
+          <b><span id="github-link"></span></b>
+          <div class="icdeki-cubuk">|</div>
+        </td>
+
+        <td>
+          <a class="link-color" href="#" style="text-decoration: none">
+            <b>HackerRank</b>➲
+          </a>
+          <div class="icdeki-cubuk">|</div>
+        </td>
+
+        <td>
+          <a class="link-color" href="#" style="text-decoration: none">
+            <b>Social Media</b>➲
+          </a>
+          <div class="icdeki-cubuk">|</div>
+        </td>
+
+        <td>
+          <a class="link-color" href="#" style="text-decoration: none">
+            <b>Twitter</b>➲
+          </a>
+          <div class="icdeki-cubuk">|</div>
+        </td>
+
+        <td>
+          <a class="link-color" href="#" style="text-decoration: none">
+            <b>Instagram</b>➲
+          </a>
+          <div class="icdeki-cubuk">|</div>
+        </td>
+
+        <td>
+          <b><span id="send-email"></span></b>
+          <div class="icdeki-cubuk">|</div>
+        </td>
+
+        <td>
+          <a class="link-color" href="#" style="text-decoration: none">
+            <b>Website</b>➲
+          </a>
+          <div class="icdeki-cubuk">|</div>
+        </td>
+      </tr>
+    </table>
+
+    <table
+      id="footer2"
+      class="footer2-table"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+    >
+      <tr>
+        <td>
+          <table
+            class="centered-table"
+            cellpadding="15"
+            cellspacing="0"
+            width="90%"
+          >
+            <tr>
+              <td width="80%" valign="top">
+                <p class="copyright-paragraph">
+                  ©Copyright 2023 by <span id="copyright-name-surname"></span>.
+                  All rights reserved.
+                </p>
+              </td>
+
+              <td>
+                <a class="top-text" href="#header"> TOP&nbsp;☝ </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script type="text/javascript" src="api_connections.js"></script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Link</title>
+    <style>
+        .link-color {
+            color: hotpink;
+            text-decoration: none;
+        }
+
+        .icdeki-cubuk {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <b><span id="github-link"></span></b>
+                <div class="icdeki-cubuk">|</div>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function addGithubAElement(githubText) {
+            let linkItem = document.createElement("a");
+            linkItem.appendChild(document.createTextNode("GitHub➲"));
+            linkItem.style.textDecoration = "none";
+            linkItem.className = "link-color";
+            linkItem.href = githubText;
+
+            var gitHubLinkObject = document.getElementById("github-link");
+            gitHubLinkObject.innerHTML = '';
+            gitHubLinkObject.appendChild(linkItem);
+        }
+
+        // Örnek olarak GitHub bağlantısı eklemek için:
+        addGithubAElement("https://github.com/yourusername");
+    </script>
+</body>
+</html>
